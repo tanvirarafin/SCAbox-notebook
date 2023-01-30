@@ -9,7 +9,7 @@ class ZyboSerial:
 
         self.zybo = None
         self.zybo_port = self.find_zybo_port(port)
-
+        print(self.zybo_port)
         try:
             self.connect(self.zybo_port,baudrate=baudrate, timeout=1)
         except:
